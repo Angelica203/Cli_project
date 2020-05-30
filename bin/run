@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-require_relative "../lib/cli_project.rb"
+require_relative "../lib/comic_vine.rb"
 
 #Cli.new.run
