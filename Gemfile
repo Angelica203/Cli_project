@@ -4,13 +4,11 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# gem "rails"
 
-gem "pry"
-gem "json"
-gem "rest-client"
-gem 'dotenv'
+gem 'pry'
+gem 'json'
+gem 'rest-client'
 
-gem "awesome_print"
+gem 'awesome_print'
 gem 'sort_index'
 
