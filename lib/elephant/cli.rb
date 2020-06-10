@@ -24,11 +24,6 @@ class Cli
   def print_goodbye
     puts 'GOODBYE!!!!!!'
   end
-
-  # def ask_user_for_elephant_choice  #ask user for choice
-  #     index = gets.strip.to_i - 1  # index = 5
-  # end
-
   
   def print_details(e) # puts elephant_object
      elephant = Elephant.all[e]
@@ -89,23 +84,4 @@ end
 
 
 
-  # elephant_instance
-
-  # def get_elephant_notes
-  #   Api.get_elephant_notes     #to get the information im going to have to make another request_
-
-
-  # def print_error
-  #   puts 'wrong selection, please try again.'
-  # end
-
-
-  # puts "  #{e.name}:, #{e.species}:,#{e.index}"   # we are interprilating and print out my list i instaiated.
-
-# Elephant.sort.by{|elephant| elephant.index}
-
-
-
-
-
-
+  
