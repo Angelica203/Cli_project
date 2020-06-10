@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    awesome_print (1.8.0)
     coderay (1.1.2)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -22,6 +23,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    sort_index (0.1.2)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
@@ -30,10 +32,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   dotenv
   json
   pry
   rest-client
+  sort_index
 
 BUNDLED WITH
    2.1.4

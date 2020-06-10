@@ -11,3 +11,6 @@ gem "json"
 gem "rest-client"
 gem 'dotenv'
 
+gem "awesome_print"
+gem 'sort_index'
+
