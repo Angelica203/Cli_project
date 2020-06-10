@@ -1,10 +1,10 @@
 puts "Cli loaded"
 class Cli
 
-  def run   #instantiate my cli class
-    print_greet # call and print out welcome to my users
+  def run              #instantiate my cli class
+    print_greet        # call and print out welcome to my users
     Api.get_elephants     #get a list from api
-    main     #building a menu, loopin and getting user input.
+    main              #build a menu, loopin and getting user input.
   end
 
   def main   #expand my functionallity 
@@ -18,7 +18,8 @@ class Cli
 
   def print_greet
     puts "welcome to my elephant CLI!"
-    puts "would you like to see a list of elephants?"  
+    puts "would you like to see a list of elephants?" 
+    sleep (1.5) 
   end
   
   def print_goodbye
@@ -55,12 +56,11 @@ class Cli
     else
       print_error
       main
-      # index= gets.strip.to_i - 1  # index = 5
     end
   end
 
   def print_error
-      puts "Sorry invalid selection, please try again"     # ask_user_for_elephant_choice
+      puts "Sorry invalid selection, please try again"     
   end
       
   def prompt_selection
