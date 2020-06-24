@@ -1,7 +1,6 @@
-puts "Elephant loaded"
 class Elephant
 
-   attr_reader  :name, :species, :sex, :dob, :note
+   attr_reader  :name, :species, :sex, :dob, :note 
     @@all = []
 
   def initialize(name, species, sex, dob, note)
@@ -13,7 +12,9 @@ class Elephant
       @@all << self   
   end
    
-  def self.all
+  def self.all  #this will be accessible to the other files.
     @@all
   end
 end
+
+

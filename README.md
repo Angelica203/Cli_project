@@ -12,9 +12,6 @@ These are the gems i used to build my Cli_project
 - gem 'json'
 - gem 'rest-client'
 
-- gem 'awesome_print'
-- gem 'sort_index'
-
 To install them, if you havent created a Gemfile. In your terminal type Bundle init. Then type Bundle install to install each gem.
 
 ## License
