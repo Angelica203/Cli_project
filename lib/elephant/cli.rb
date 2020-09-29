@@ -1,3 +1,4 @@
+require 'pry'
 class Cli
 
   def run              #instantiate my cli class
@@ -16,19 +17,15 @@ class Cli
   def print_greet
     puts "Welcome to my elephant CLI!"
     puts "Here is  a list of elephants." 
-    sleep (1.5) 
+    sleep (1) 
   end
   
   def print_goodbye
     puts 'GOODBYE!!!!!!'
   end
   
-  def new_array
-     Elephant.all.reject {|elephant| elephant.name == nil}
-  end
-
   def print_all 
-    new_array.each.with_index(1) do |elephant, index| 
+    Elephant.all.each.with_index(1) do |elephant, index| 
       puts "#{index}.) #{elephant.name}"     #print a list of elephants name# we are interpolating and print out list of elephants.
     end
   end
@@ -42,8 +39,9 @@ class Cli
   end
     
   def user_input
+    binding.pry
     index = gets.strip.to_i - 1
-    max_limit = new_array.size - 1
+    max_limit = Elephant.all.size - 1
     until index.between?(0,max_limit)
       print_error
       index = gets.strip.to_i - 1
@@ -74,9 +72,14 @@ class Cli
       puts "Sorry invalid selection, please try again"  
   end
       
-  def prompt_selection
-    selection = gets.strip
-  end
+  # def prompt_selection
+  #   selection = gets.strip
+  # end
+
+
+end
+
+
 
   # def proceed?(choice)
   #   if choice == "y" 
@@ -86,8 +89,6 @@ class Cli
   #      exit
   #   end
   # end
-
-end
 
 
 

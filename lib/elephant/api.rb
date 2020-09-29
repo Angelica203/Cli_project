@@ -10,7 +10,8 @@ class Api
             sex = elephant["sex"]
             dob = elephant["dob"]
             note = elephant["note"]
-            Elephant.new(name, species, sex, dob, note) # (its creating a new instance of the elephant class)
+            Elephant.new(name, species, sex, dob, note) if name != nil 
+            # (its creating a new instance of the elephant class)
         
       end    
     

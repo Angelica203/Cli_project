@@ -16,5 +16,3 @@ class Elephant
     @@all
   end
 end
-
-
